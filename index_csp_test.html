@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W-15C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta
+      name="generator"
+      content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="keywords"
+      content="stadsplattegrond, kaarten, kaart, stadskaart, nijmegen, stadskaarten, 9789028707849, Gelderland, Nederland, Europa, Bestemming, Falk, Kaarten, Wegenkaarten en -atlassen, Kaarten, boeken en gidsen"
+    />
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' https://*.blueconic.net 'nonce-myNonce' 'strict-dynamic';
+      style-src 'self' https://*.blueconic.net 'nonce-myNonce';
+      connect-src 'self' https://*.blueconic.net;
+      img-src 'self' https://*.blueconic.net data:;
+      font-src 'self' https://*.blueconic.net;
+      frame-src 'self' https://*.blueconic.net;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';">
+    <meta name="tagWords" content="books, cats, dogs" />
+    <title>Blueprint Sample Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Framework CSS -->
+    <link
+      rel="stylesheet"
+      href="../AFT/Testpage/sample_files/screen.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="../AFT/Testpage/sample_files/print.css"
+      type="text/css"
+      media="print"
+    />
+    <!--[if lt IE 8
+      ]><link
+        rel="stylesheet"
+        href="../../../blueprint/ie.css"
+        type="text/css"
+        media="screen, projection"
+    /><![endif]-->
+  </head>
+
+  <body>
+    <script type="text/javascript" nonce="myNonce">
+      var myVar = "testValue";
+      var myOtheVar = "otherTestValue";
+      var subVar = { someVar: "testValue2" };
+      var arrayVar = ["first", "second", "third", { a: "b" }];
+      var emptyVar = { t: { "": "empty" } };
+
+      function circular() {
+        var c = { otherData: 123 };
+        c.myself = c;
+        return c;
+      }
+
+      var circularReference = circular();
+      var nonCircularReference = { otherData: 123 };
+
+      var dataLayerObjectWithNull = { a: "aaa", b: null, c: "ccc" };
+      var dataLayerArrayWithNull = [
+        { a1: "aaa", b1: null, c: "ccc" },
+        { a2: "aaa", b2: "bbb", c: null },
+        { a3: "aaa", b3: "bbb", c: "ccc2" },
+        null,
+      ];
+      var dataLayerArrayEmpty = [];
+      var dataLayerObjectEmpty = {};
+
+      var falsyObject = {
+        false: false,
+        empty: "",
+        null: null,
+        zero: 0,
+        zeroString: "0",
+        falseString: "false",
+        minusZero: -0,
+      };
+      var falsyArray = [false, "", null, 0, -0];
+
+      var eventDatalayer = [
+        {
+          event: "shop_info",
+          eventName: "d",
+          shop: {
+            data: {
+              size: "XL",
+              price: "10",
+            },
+          },
+        },
+        {
+          event: "shop_info_2",
+          eventName: "3",
+          shop: {
+            data: {
+              size: "XXXXL",
+              price: "1000",
+            },
+          },
+        },
+        {
+          event: "add_to_cart",
+          eventName: "a",
+          prods: [
+            {
+              name: "hello",
+            },
+            {
+              name: "world",
+            },
+          ],
+          ecommerce: {
+            add: {
+              products: [
+                {
+                  brand: "Cool clothes",
+                  id: "bla",
+                },
+                {
+                  brand: "Ugly clothes",
+                  id: "abc",
+                },
+              ],
+            },
+          },
+        },
+        {
+          event: "add_to_cart",
+          eventName: "b",
+          eventNameSecondary: "b_second",
+          prods: [
+            {
+              name: "foobar",
+            },
+          ],
+          ecommerce: {
+            add: {
+              products: [
+                {
+                  brand: "Nice clothes",
+                  id: "abc",
+                },
+              ],
+            },
+          },
+        },
+        {
+          event: "remove_from_cart",
+          eventName: "c",
+          prods: [
+            {
+              name: "testing",
+            },
+          ],
+          ecommerce: {
+            add: {
+              products: [
+                {
+                  brand: "Nice clothes",
+                  id: "abc",
+                },
+              ],
+            },
+          },
+        },
+      ];
+
+      var dataLayer = [
+        {
+          Customer: {
+            AppToken: false,
+            HasMultiSubscriptionEligibleForRenewal: false,
+          },
+          Request: { TODO: 1 },
+        },
+        {
+          event: "gtm.js",
+          "gtm.start": 1593517590524,
+          "gtm.uniqueEventId": 453,
+        },
+        {
+          event: "fireRemarketingTag",
+          google_tageParams: {},
+          "gtm.uniqueEventId": 390,
+        },
+        {
+          event: "gtm.dom",
+          "gtm.uniqueEventId": 404,
+        },
+        {
+          event: "gtm.timer",
+          "gtm.timerCurrentTime": 1593517591153,
+          "gtm.timerElapsedTime": 253,
+          "gtm.timerEventNumber": 1,
+          "gtm.timerId": 94,
+          "gtm.timerInterval": 250,
+          "gtm.timerLimit": 10,
+          "gtm.timerStartTime": 1593517590900,
+          "gtm.triggers": "0",
+          "gtm.uniqueEventId": 438,
+        },
+        {
+          event: "gtm.js",
+          "gtm.start": 1593517591448,
+          "gtm.uniqueEventId": 452,
+        },
+        {
+          event: "bcInteractionView",
+          name: "(PER252) TC / Homepage / Full Banner / Uit & Thuis Prospects (onbekend) / REG / Uit & Thuis Prospects (onbekend)",
+          "gtm.uniqueEventId": 656,
+        },
+        {
+          event: "gaEvent",
+          gaEent: {
+            NonInt: true,
+            action: "interaction view",
+            category: "blueconic",
+            label:
+              "(PER252) TC / Homepage / Full Banner / Uit & Thuis Prospects (onbekend) / REG / Uit & Thuis Prospects (onbekend)",
+            value: undefined,
+          },
+          "gtm.uniqueEventId": 696,
+        },
+        {
+          event: "gtm.js",
+          "gtm.start": 1593517591448,
+          "gtm.uniqueEventId": 452,
+        },
+        {
+          event: "gtm.load",
+          "gtm.uniqueEventId": 899,
+        },
+        {
+          event: "pixels",
+          "gtm.uniqueEventId": 931,
+        },
+      ];
+
+      var dataLayer2 = [
+        {
+          event: "gtm.js",
+          "gtm.start": 123,
+          "gtm.uniqueEventId": 456,
+        },
+        {
+          event: "gtm.load",
+          "gtm.uniqueEventId": 789,
+        },
+      ];
+
+      // JEBBIT TEST DATALAYER
+      var blueconicDataLayer = [];
+     
+      (function () {
+        // Change
+        this.bcHostname = "tenant01-slot01-bc12.blueconic.net";
+        this.bcNonce= "myNonce";
+        if (this.bcHostname.indexOf("127.0.0.1:") != -1) {
+          this.bcHostname = this.bcHostname.replace("127.0.0.1:", "localhost:");
+        }
+
+        // Do not change
+        var protocol = "https://"; //== document.location.protocol) ? "https://" : "http://");
+        var bcScript = document.createElement("script");
+        bcScript.async = true;
+        bcScript.src =
+          protocol +
+          this.bcHostname +
+          "/frontend/static/javascript/blueconic/blueconic.min.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(bcScript);
+      })(); 
+    </script>
+
+    <div class="container">
+      <div class="width-400">
+        <p>
+          <span>
+            Sandbox: <a href="/tenants/sb-apollo.html">Apollo</a>
+          </span>
+          <a href="/AFT">/AFT</a> -
+          <a href="AFT/skylithdemo/about-us.htm">Skylith: About Us</a> -
+          <a href="AFT/skylithdemo/about-you.htm">Skylith: About You</a>
+          <br />bc10: <a href="/tenants/bc10s05.html">s05</a> -
+          <a href="/tenants/bc10s08.html">s08</a> -
+          <a href="/tenants/bc10s07.html">s07</a> -
+          <a href="/tenants/bc10s10.html">s10</a> -
+          <a href="/tenants/bc10s15.html">s15</a> -
+          <a href="/tenants/bc10s16.html">s16</a> -
+          <a href="/tenants/bc10s17.html">s17</a> -
+          <a href="/tenants/tenant01-slot19-bc10.blueconic.net.html">s19</a>
+          <br />bc11: <a href="/tenants/bc11s02.html">s02</a> -
+          <a href="/tenants/bc11s07.html">s07</a> -
+          <a href="/tenants/bc11s16.html">s16</a> -
+          <a href="/tenants/tenant01-slot17-bc11.blueconic.net.html">s17</a> -
+          <a href="/tenants/tenant01-slot18-bc11.blueconic.net.html">s18</a> -
+          <a href="/tenants/tenant01-slot19-bc11.blueconic.net.html">s19</a>
+          <br />bc12:
+          <a href="/tenants/bc12s08.html">s08</a>
+          <br />bc13:
+          <a href="/tenants/bc13s08.html">s08</a>
+          <br />bc14:
+          <a href="/tenants/bc14s08.html">s08</a>
+        </p>
+      </div>
+      <div class="width-400">
+        <br />
+        <form
+          id="delete_profile"
+          onsubmit="return blueConicClient.profile.deleteProfile();"
+        >
+          <input type="submit" value="Delete profile" />
+        </form>
+        <br />
+        <form
+          id="create_profile"
+          onsubmit="return blueConicClient.profile.createProfile();"
+        >
+          <input type="submit" value="Create profile" />
+        </form>
+      </div>
+      <div>
+        <a href="/firstparty/taylor/">Taylor</a>
+        <a href="/firstparty/poc1/">Poc1</a>
+      </div>
+      <hr />
+      <h1>A simple sample page</h1>
+      <hr />
+      <h2 class="alt">
+        This sample page demonstrates a tiny fraction of what you get with
+        Blueprint.
+      </h2>
+      <hr />
+      <div class="span-7 colborder" id="position_1">
+        <h6>Here&#39;s a box</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip.
+        </p>
+      </div>
+      <div class="span-8 colborder" id="position_2">
+        <h6>And another box</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat laboris nisi ut aliquip.
+        </p>
+      </div>
+      <div class="span-7 last" id="position_3">
+        <h6>This box is aligned with the sidebar</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip.
+        </p>
+      </div>
+      <hr />
+      <hr class="space" />
+      <div class="span-15 prepend-1 colborder">
+        <p>
+          <img
+            src="../AFT/Testpage/sample_files/test.jpg"
+            class="top pull-1 left"
+            alt="test"
+          />Lorem ipsum dolor sit amet, <em>consectetuer adipiscing elit</em>.
+          Nunc congue ipsum vestibulum libero. Aenean vitae justo. Nam eget
+          tellus. Etiam convallis, est eu lobortis mattis, lectus tellus tempus
+          felis, a ultricies erat ipsum at metus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          <a href="#">Morbi et risus</a>. Aliquam nisl. Nulla facilisi. Cras
+          accumsan vestibulum ante. Vestibulum sed tortor. Praesent
+          <span class="caps">SMALL CAPS</span> tempus fringilla elit. Ut elit
+          diam, sagittis in, nonummy in, gravida non, nunc. Ut orci. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos hymenaeos. Nam egestas, orci eu imperdiet malesuada, nisl
+          purus fringilla odio, quis commodo est orci vitae justo. Aliquam
+          placerat odio tincidunt nulla. Cras in libero. Aenean rutrum, magna
+          non tristique posuere, erat odio eleifend nisl, non convallis est
+          tortor blandit ligula. Nulla id augue.
+        </p>
+        <hr />
+        <div class="span-7 colborder">
+          <h6>This is a nested column</h6>
+          <form id="form2" method="get" action="">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>
+              What is your name:
+              <input name="name2" />
+              <br />What is your email address:
+              <input name="email2" />
+              <br />What is your age:
+              <input name="age2" />
+              <br />What is your favorite color:
+              <select name="color2">
+                <option selected="selected" value="groen">chartreuse</option>
+                <option value="blauw">azure</option>
+                <option value="rood">puce</option>
+                <option value="geel">mustard</option>
+              </select>
+              <br />What are your preferences?:
+              <select name="preferences2">
+                <option selected="selected">Shoes</option>
+                <option>Politics</option>
+                <option>Magazine</option>
+                <option>Marathon</option>
+                <option>Soccer</option>
+                <option>Yoga</option>
+              </select>
+              <br />What is your favorite number:
+              <input name="number2" />
+              <br />What is your year of birth
+              <input name="birthyear2" />
+              <br />Press <input type="submit" value="formlistener" /> to submit
+              your query.
+            </p>
+          </form>
+        </div>
+        <div class="span-7 last">
+          <h6>This is another nested column</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="span-7 last">
+        <h3>A <span class="alt">Simple</span> Sidebar</h3>
+        <form id="sample_form" method="get" action="">
+          <p>
+            What is your name:
+            <input name="name" />
+            <br />What is your email address:
+            <input name="email" />
+            <br />What is your age:
+            <input name="age" />
+            <br />What is your favorite color:
+            <select name="color">
+              <option selected="selected">chartreuse</option>
+              <option>azure</option>
+              <option>puce</option>
+              <option>mustard</option>
+            </select>
+            <br />What are your preferences?:
+            <select name="preferences">
+              <option selected="selected">Shoes</option>
+              <option>Politics</option>
+              <option>Magazine</option>
+              <option>Marathon</option>
+              <option>Soccer</option>
+              <option>Yoga</option>
+            </select>
+            <br />What is your favorite number:
+            <input name="number" />
+            <br />What is your year of birth
+            <input name="birthyear" />
+            <br />What is your birth date?
+            <input name="birthdate" />
+            <br />Press <input type="submit" value="here" /> to submit your
+            query.
+          </p>
+        </form>
+        <hr />
+        <hr />
+        <div id="profileOverview">Current profile values:</div>
+      </div>
+    </div>
+  </body>
+</html>
