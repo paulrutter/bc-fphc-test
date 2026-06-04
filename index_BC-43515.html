@@ -1,20 +1,17 @@
+
 <!DOCTYPE html>
 <!--
-  BC-43515 — cross-origin parent page for FPHC (fphc.blueconic.net / taylor-shopping).
-
-  BlueConic hostname (READY): m675.taylor-shopping.com
-  Paul's script on channel page: https://c.m675.taylor-shopping.com/script.js
-  Related hostnames (channel sites): taylor-shopping.com (+2 more — ask Paul which URL hosts his HTML)
-
-  Host this file on a related hostname that is NOT the iframe page origin
-  (e.g. another of the +2 related hosts, or taylor-shopping.com with a different path).
-
-  Set CHANNEL_PAGE_URL to the full HTTPS URL of Paul's test page before deploy.
+  BC-43515 — PARENT page (cross-origin top window).
+​
+  Deploy to: https://www.blueconic.test/BC-43515/parent.html
+  Open that URL on VPN (not this file on taylor-shopping.com).
+​
+  Iframe loads the channel page on an FPHC related hostname (see channel.html).
 -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>BC-43515 — cross-origin parent (FPHC taylor-shopping)</title>
+    <title>BC-43515 — parent (blueconic.test)</title>
     <style>
       body { font-family: system-ui, sans-serif; margin: 1.5rem; color: #222; }
       h1 { font-size: 1.1rem; }
@@ -35,23 +32,13 @@
     </p>
     <iframe id="channelFrame" title="Taylor FPHC channel page (cross-origin iframe)"></iframe>
     <script>
-      // --- Configure once (Paul / Atieh) ---------------------------------
-      // Paul's channel test page (Team Agentic / FPHC script on c.m675…).
-      //var CHANNEL_PAGE_URL = 'https://www.taylor-shopping.com/index_m675.html';
-      CHANNEL_PAGE_URL  = 'https://www.blueconic.test/BC-43515/iframe.html';
-
-      // Host this parent file on another related hostname, e.g. apex (cross-origin vs www):
-      // https://taylor-shopping.com/parent-fphc-taylor.html
-
-      // From FPHC UI: BlueConic hostname READY = m675.taylor-shopping.com
+      var CHANNEL_PAGE_URL = 'https://www.taylor-shopping.com/index_m675.html';
+​
       var BLUECONIC_HOSTNAME = 'm675.taylor-shopping.com';
-      // Paul's embed uses the c. host for script.js
-      var SCRIPT_HOST = 'c.m675.taylor-shopping.com';
-      // RPC after fix should use the CNAME (m675); not the FPHC tenant admin host
+      var SCRIPT_HOST = 'm675.taylor-shopping.com';
       var EXPECTED_RPC_HOST = BLUECONIC_HOSTNAME;
       var TENANT_HOST = 'fphc.blueconic.net';
-      // --------------------------------------------------------------------
-
+​
       document.getElementById('origin').textContent = location.origin;
       document.getElementById('iframeUrl').textContent = CHANNEL_PAGE_URL;
       document.getElementById('scriptHost').textContent = SCRIPT_HOST;
