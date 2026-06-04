@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--
   BC-43515 — PARENT page (cross-origin top window).
-​
+
   Deploy to: https://www.blueconic.test/BC-43515/parent.html
   Open that URL on VPN (not this file on taylor-shopping.com).
-​
+
   Iframe loads the channel page on an FPHC related hostname (see channel.html).
 -->
 <html lang="en">
@@ -32,12 +32,12 @@
     <iframe id="channelFrame" title="Taylor FPHC channel page (cross-origin iframe)"></iframe>
     <script>
       var CHANNEL_PAGE_URL = 'https://www.taylor-shopping.com/index_m675.html';
-​
+
       var BLUECONIC_HOSTNAME = 'm675.taylor-shopping.com';
       var SCRIPT_HOST = 'm675.taylor-shopping.com';
       var EXPECTED_RPC_HOST = BLUECONIC_HOSTNAME;
       var TENANT_HOST = 'fphc.blueconic.net';
-​
+
       document.getElementById('origin').textContent = location.origin;
       document.getElementById('iframeUrl').textContent = CHANNEL_PAGE_URL;
       document.getElementById('scriptHost').textContent = SCRIPT_HOST;
